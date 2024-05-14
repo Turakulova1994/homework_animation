@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: steelblue;
+}
+.anime {
+    width: 100px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 40px;
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
+}
+
+.anime > div {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    animation: move 3s infinite linear alternate;
+}
+@keyframes move {
+    from {
+        transform:  translateY(0);
+        opacity: 20;
+    }
+
+    to {
+        transform: translateY(150px);
+        opacity: 0; 
+    }
+}
